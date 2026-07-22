@@ -12,12 +12,12 @@ bun run dev
 ```
 
 ## Tech Stack
+
 - React
 - Vite
 - Tailwind CSS
 - Radix UI
 - TanStack Router
-
 
 - TanStack Start
 - TypeScript

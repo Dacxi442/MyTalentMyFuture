@@ -78,10 +78,10 @@
   --parchment: oklch(0.985 0.01 90);
 
   /* Story palette — cool → warm across the scroll. */
-  --brand-blue: oklch(0.55 0.13 240);   /* #0369a1-ish */
-  --brand-yellow: oklch(0.82 0.17 90);  /* #eab308-ish */
-  --brand-green: oklch(0.58 0.14 150);  /* #15803d-ish */
-  --brand-orange: oklch(0.72 0.19 55);  /* #f97316-ish — reserved for key CTAs */
+  --brand-blue: oklch(0.55 0.13 240); /* #0369a1-ish */
+  --brand-yellow: oklch(0.82 0.17 90); /* #eab308-ish */
+  --brand-green: oklch(0.58 0.14 150); /* #15803d-ish */
+  --brand-orange: oklch(0.72 0.19 55); /* #f97316-ish — reserved for key CTAs */
 
   /* Chapter backgrounds — each is a low-saturation tint of a palette color,
      ordered so scrolling top→bottom feels like a sunrise. */
@@ -173,7 +173,12 @@
     -webkit-font-smoothing: antialiased;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: var(--font-display);
     font-feature-settings: "ss01";
   }
@@ -223,8 +228,12 @@
 }
 
 @keyframes threadDraw {
-  from { stroke-dashoffset: 800; }
-  to   { stroke-dashoffset: 0; }
+  from {
+    stroke-dashoffset: 800;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
 }
 
 @utility animate-thread-draw {
@@ -234,8 +243,13 @@
 }
 
 @keyframes floatSlow {
-  0%, 100% { transform: translateY(0) rotate(-2deg); }
-  50%      { transform: translateY(-12px) rotate(2deg); }
+  0%,
+  100% {
+    transform: translateY(0) rotate(-2deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(2deg);
+  }
 }
 
 @utility animate-float-slow {

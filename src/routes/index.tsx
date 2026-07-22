@@ -159,78 +159,67 @@ const departments = [
   {
     name: "Creative Coding",
     tag: "Logic as art",
-    body:
-      "Using AI to build real apps, websites and small games. Children learn to think in steps, break problems open, and watch an idea become something they can click.",
+    body: "Using AI to build real apps, websites and small games. Children learn to think in steps, break problems open, and watch an idea become something they can click.",
     Icon: Code2,
   },
   {
     name: "Music & Rhythm",
     tag: "Songs from silence",
-    body:
-      "Hands-on time with guitars, pianos and drum sets. From the first shy note to a full band jam, every child finds a sound that belongs to them.",
+    body: "Hands-on time with guitars, pianos and drum sets. From the first shy note to a full band jam, every child finds a sound that belongs to them.",
     Icon: KeyboardMusic,
   },
   {
     name: "The Art of Baking",
     tag: "Science in the kitchen",
-    body:
-      "Cakes, buns, fries and pastry designs. A warm workshop where measuring, patience and a little courage turn simple ingredients into something worth sharing.",
+    body: "Cakes, buns, fries and pastry designs. A warm workshop where measuring, patience and a little courage turn simple ingredients into something worth sharing.",
     Icon: Cookie,
   },
   {
     name: "Fashion & Design",
     tag: "Stitching identity",
-    body:
-      "Tailoring, crocheting and needlework. Children sketch, cut and stitch their first pieces — learning that clothes can be a language they write themselves.",
+    body: "Tailoring, crocheting and needlework. Children sketch, cut and stitch their first pieces — learning that clothes can be a language they write themselves.",
     Icon: Scissors,
   },
   {
     name: "Arts & Crafts",
     tag: "Colour, texture, story",
-    body:
-      "Paint, paper, clay and found materials. A free-form studio where a smudge becomes a sky and every child discovers that a blank page is an invitation, not a test.",
+    body: "Paint, paper, clay and found materials. A free-form studio where a smudge becomes a sky and every child discovers that a blank page is an invitation, not a test.",
     Icon: Palette,
   },
   {
     name: "Photography",
     tag: "Seeing on purpose",
-    body:
-      "Learning to notice — light, faces, small ordinary miracles. Children handle real cameras and leave with a portfolio of frames only they could have seen.",
+    body: "Learning to notice — light, faces, small ordinary miracles. Children handle real cameras and leave with a portfolio of frames only they could have seen.",
     Icon: Camera,
   },
   {
     name: "Videography",
     tag: "Stories that move",
-    body:
-      "From phone-shot scenes to short films: framing, sound and the first taste of editing. Children learn that a story you can play back is a story that lasts.",
+    body: "From phone-shot scenes to short films: framing, sound and the first taste of editing. Children learn that a story you can play back is a story that lasts.",
     Icon: Video,
   },
   {
     name: "Leadership",
     tag: "The courage to guide",
-    body:
-      "Small-group challenges that quietly teach children to speak up, listen well and take a decision with a room watching. Confidence, practised.",
+    body: "Small-group challenges that quietly teach children to speak up, listen well and take a decision with a room watching. Confidence, practised.",
     Icon: Users,
   },
   {
     name: "Indoor & Strategy Games",
     tag: "Play that sharpens the mind",
-    body:
-      "Chess, Monopoly, Scrabble, cards and Jenga. Focus, patience and playful rivalry — where losing well is the first lesson and thinking ahead is the reward.",
+    body: "Chess, Monopoly, Scrabble, cards and Jenga. Focus, patience and playful rivalry — where losing well is the first lesson and thinking ahead is the reward.",
     Icon: Crown,
   },
   {
     name: "Sports",
     tag: "The joy of the body",
-    body:
-      "Football, athletics and outdoor drills. Sweat, laughter and the small triumph of a body that surprises its owner by what it can do.",
+    body: "Football, athletics and outdoor drills. Sweat, laughter and the small triumph of a body that surprises its owner by what it can do.",
     Icon: Trophy,
   },
   {
     name: "Team Building",
     tag: "Better together",
-    body:
-      "Group tasks that only work when everyone shows up. Trust, communication and the quiet magic of a plan that a team — not a person — pulled off.",
+    body: "Group tasks that only work when everyone shows up. Trust, communication and the quiet magic of a plan that a team — not a person — pulled off.",
     Icon: HeartHandshake,
   },
 ];
@@ -459,7 +448,11 @@ function ChapterSpark() {
         <defs>
           <linearGradient id="threadGrad" x1="0" x2="1" y1="0" y2="0">
             <stop offset="0%" stopColor="var(--brand-blue)" stopOpacity="0.5" />
-            <stop offset="100%" stopColor="var(--brand-yellow)" stopOpacity="0.9" />
+            <stop
+              offset="100%"
+              stopColor="var(--brand-yellow)"
+              stopOpacity="0.9"
+            />
           </linearGradient>
         </defs>
       </svg>
@@ -498,7 +491,9 @@ function ChapterSpark() {
             Every child has <em className="italic font-light">potential</em>.
           </h1>
           <p className="mt-6 max-w-[52ch] text-pretty text-base leading-relaxed text-ink/70 md:text-lg">
-            But potential alone is not enough. They need exposure, mentors, and opportunities. This is a movement to help children discover what they can become.
+            But potential alone is not enough. They need exposure, mentors, and
+            opportunities. This is a movement to help children discover what
+            they can become.
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <a
@@ -556,23 +551,31 @@ function ChapterContext() {
           <div>
             <Kicker tone="blue">Chapter II · The Challenge</Kicker>
             <h2 className="mt-6 text-balance font-display text-4xl font-medium leading-[1.1] md:text-4xl">
-              Resources without <em className="italic">mentors</em> remain silent.
+              Resources without <em className="italic">mentors</em> remain
+              silent.
             </h2>
             <div className="mt-10 max-w-[48ch] space-y-6 text-lg leading-relaxed text-ink/70">
               <p>
-                This bootcamp is organized primarily for the children at Makimei Children's Home.
+                This bootcamp is organized primarily for the children at Makimei
+                Children's Home.
               </p>
               <p>
-                The home already possesses valuable resources: computers, sewing machines, musical instruments, baking equipment, and learning facilities. The challenge is not simply a lack of equipment.
+                The home already possesses valuable resources: computers, sewing
+                machines, musical instruments, baking equipment, and learning
+                facilities. The challenge is not simply a lack of equipment.
               </p>
               <p>
-                The challenge is that these resources remain underutilized because the children have not had enough opportunities to learn from skilled mentors who can guide them. We are here to activate those resources.
+                The challenge is that these resources remain underutilized
+                because the children have not had enough opportunities to learn
+                from skilled mentors who can guide them. We are here to activate
+                those resources.
               </p>
             </div>
           </div>
           <div className="relative aspect-square w-full max-w-md mx-auto lg:mx-0 overflow-hidden rounded-full border border-black/5 bg-chapter-spark">
             <div className="absolute inset-0 flex items-center justify-center p-12 text-center font-display text-2xl italic text-ink/60">
-              "Children do not simply watch demonstrations. They participate. They create. They explore. They build."
+              "Children do not simply watch demonstrations. They participate.
+              They create. They explore. They build."
             </div>
           </div>
         </Reveal>
@@ -604,10 +607,14 @@ function ChapterBelief() {
             </h2>
             <div className="mt-10 max-w-[52ch] space-y-6 text-lg leading-relaxed text-ink/70">
               <p>
-                The purpose is not entertainment. The purpose is transformation. The goal is not to make experts in three days, but to ignite curiosity and build confidence.
+                The purpose is not entertainment. The purpose is transformation.
+                The goal is not to make experts in three days, but to ignite
+                curiosity and build confidence.
               </p>
               <p>
-                We expose children to practical experiences in coding, photography, baking, and leadership. We plant seeds that continue growing long after the boot camp ends.
+                We expose children to practical experiences in coding,
+                photography, baking, and leadership. We plant seeds that
+                continue growing long after the boot camp ends.
               </p>
             </div>
           </Reveal>
@@ -618,8 +625,9 @@ function ChapterBelief() {
             {stats.map((s, i) => (
               <div
                 key={s.label}
-                className={`rounded-3xl border border-black/5 bg-white/70 p-8 ${i === 1 ? "translate-y-8" : ""
-                  } ${i === 2 ? "-translate-y-4" : ""}`}
+                className={`rounded-3xl border border-black/5 bg-white/70 p-8 ${
+                  i === 1 ? "translate-y-8" : ""
+                } ${i === 2 ? "-translate-y-4" : ""}`}
               >
                 <div className="font-display text-4xl font-medium text-brand-blue md:text-5xl">
                   {s.n}
@@ -631,7 +639,8 @@ function ChapterBelief() {
             ))}
           </div>
           <p className="mt-10 max-w-[40ch] font-display text-xl italic text-ink/60">
-            "Many children never discover their gifts because they have never been exposed to different possibilities."
+            "Many children never discover their gifts because they have never
+            been exposed to different possibilities."
           </p>
         </Reveal>
       </div>
@@ -674,8 +683,9 @@ function ChapterDiscovery() {
             <Reveal
               key={d.name}
               delay={(i % 4) * 80}
-              className={`group relative overflow-hidden rounded-3xl bg-white/70 p-8 transition-all [border-width:0.5px] border-ink/15 hover:border-brand-orange/60 hover:bg-white ${i % 3 === 0 ? "lg:translate-y-6" : ""
-                } ${i % 5 === 0 ? "lg:-translate-y-2" : ""}`}
+              className={`group relative overflow-hidden rounded-3xl bg-white/70 p-8 transition-all [border-width:0.5px] border-ink/15 hover:border-brand-orange/60 hover:bg-white ${
+                i % 3 === 0 ? "lg:translate-y-6" : ""
+              } ${i % 5 === 0 ? "lg:-translate-y-2" : ""}`}
             >
               <div className="flex items-center justify-between">
                 <div className="grid h-11 w-11 place-items-center rounded-xl bg-brand-blue/10 text-brand-blue">
@@ -711,31 +721,31 @@ function ChapterJourney() {
     {
       day: "Day One",
       title: "Discover",
-      body:
-        "Children rotate through every workshop, tasting each craft to find where their heart beats fastest.",
+      body: "Children rotate through every workshop, tasting each craft to find where their heart beats fastest.",
       tone: "text-brand-yellow",
       dot: "bg-brand-yellow",
     },
     {
       day: "Day Two",
       title: "Learn",
-      body:
-        "Deep-dive mentorship. Every child chooses their path and begins building the cornerstone piece they'll show the world.",
+      body: "Deep-dive mentorship. Every child chooses their path and begins building the cornerstone piece they'll show the world.",
       tone: "text-brand-green",
       dot: "bg-brand-green",
     },
     {
       day: "Day Three",
       title: "Showcase",
-      body:
-        "Family, friends and the community gather as the children unveil what they've made — and, quietly, who they've become.",
+      body: "Family, friends and the community gather as the children unveil what they've made — and, quietly, who they've become.",
       tone: "text-brand-orange",
       dot: "bg-brand-orange",
     },
   ];
 
   return (
-    <section id="journey" className="relative overflow-hidden bg-chapter-journey px-6 py-20">
+    <section
+      id="journey"
+      className="relative overflow-hidden bg-chapter-journey px-6 py-20"
+    >
       <div className="mx-auto max-w-7xl">
         <Reveal className="mb-24 flex flex-col items-start justify-between gap-6 md:flex-row md:items-end">
           <div>
@@ -749,10 +759,12 @@ function ChapterJourney() {
                 Thu 20 – Sat 22 August, 2026
               </span>
               <span className="inline-flex items-center gap-2 rounded-full bg-white/70 px-3 py-1.5 [border-width:0.5px] border-ink/15">
-                Children from the home · <strong className="font-semibold text-ink">Free</strong>
+                Children from the home ·{" "}
+                <strong className="font-semibold text-ink">Free</strong>
               </span>
               <span className="inline-flex items-center gap-2 rounded-full bg-white/70 px-3 py-1.5 [border-width:0.5px] border-ink/15">
-                Community children · <strong className="font-semibold text-ink">KES 1,500</strong>
+                Community children ·{" "}
+                <strong className="font-semibold text-ink">KES 1,500</strong>
               </span>
             </div>
           </div>
@@ -821,30 +833,35 @@ function ChapterCircle() {
     {
       name: "Ochran Ongeri",
       roles: ["Founder Palaver Africa", "Assistant Bootcamp Coordinator"],
-      image: ""
+      image: "",
     },
     {
       name: "Carolyne Wahuu",
       roles: ["Miss Kikuyu 2026-2027"],
-      image: wahuu
+      image: wahuu,
     },
     {
       name: "Anthony Turungi",
       roles: ["Founder Kym_creates"],
-      image: kym
+      image: kym,
     },
     {
       name: "Amina K.",
       roles: ["Operations Lead", "Safeguarding"],
-      image: ""
+      image: "",
     },
     {
       name: "Joel M.",
       roles: ["Head of Mentorship"],
-      image: ""
+      image: "",
     },
   ];
-  const partners = ["Makimei Children's Home", "Palaver Africa", "Dacxi Technologies", "Kym_creates"];
+  const partners = [
+    "Makimei Children's Home",
+    "Palaver Africa",
+    "Dacxi Technologies",
+    "Kym_creates",
+  ];
 
   return (
     <section id="circle" className="relative bg-chapter-journey/60 px-6 py-20">
@@ -877,7 +894,10 @@ function ChapterCircle() {
                   </div>
                   <div className="flex flex-col gap-1 mt-2">
                     {m.roles.map((role, idx) => (
-                      <div key={idx} className="text-[11px] leading-tight uppercase tracking-widest text-ink/50">
+                      <div
+                        key={idx}
+                        className="text-[11px] leading-tight uppercase tracking-widest text-ink/50"
+                      >
                         {role}
                       </div>
                     ))}
@@ -898,7 +918,9 @@ function ChapterCircle() {
                   className="flex items-center justify-between py-5 font-display text-xl"
                 >
                   <span>{p}</span>
-                  <span className="text-ink/30 text-xs font-sans">since '22</span>
+                  <span className="text-ink/30 text-xs font-sans">
+                    since '22
+                  </span>
                 </li>
               ))}
             </ul>
@@ -911,10 +933,14 @@ function ChapterCircle() {
                 Invest in a young life.
               </h3>
               <p className="mt-5 text-base leading-relaxed text-parchment/80">
-                Children often discover their future because one adult believed in them. Volunteers make that possible. They bring knowledge, encouragement, and mentorship.
+                Children often discover their future because one adult believed
+                in them. Volunteers make that possible. They bring knowledge,
+                encouragement, and mentorship.
               </p>
               <p className="mt-3 text-base leading-relaxed text-parchment/80">
-                You don't need to be a teacher. We need people to organize, mentor, supervise, coordinate logistics, support departments, and capture media.
+                You don't need to be a teacher. We need people to organize,
+                mentor, supervise, coordinate logistics, support departments,
+                and capture media.
               </p>
             </div>
             <a
@@ -948,7 +974,10 @@ function ChapterInvitation() {
             <em className="italic">impact.</em>
           </h2>
           <p className="mt-8 max-w-[46ch] text-lg text-ink/70">
-            Sponsorship is an investment in the future of children. While financial support is crucial, we also invite partners to support through equipment, books, internet, computers, training materials, or professional expertise.
+            Sponsorship is an investment in the future of children. While
+            financial support is crucial, we also invite partners to support
+            through equipment, books, internet, computers, training materials,
+            or professional expertise.
           </p>
         </Reveal>
 
@@ -991,8 +1020,8 @@ function ChapterInvitation() {
               </h3>
               <p className="mt-3 max-w-[40ch] text-sm text-ink/60">
                 Four doors, one arena. Open for children aged 8–16 and the
-                adults who show up for them. Community children contribute
-                KES 1,500 to cover snacks and materials.
+                adults who show up for them. Community children contribute KES
+                1,500 to cover snacks and materials.
               </p>
 
               <div className="mt-8 grid gap-3">
@@ -1011,10 +1040,11 @@ function ChapterInvitation() {
                     href={cta.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`group flex items-center justify-between rounded-2xl px-5 py-4 text-sm font-medium transition-colors ${cta.primary
-                      ? "bg-brand-blue text-white ring-1 ring-brand-blue"
-                      : "bg-parchment ring-1 ring-black/5 hover:bg-brand-yellow/20"
-                      }`}
+                    className={`group flex items-center justify-between rounded-2xl px-5 py-4 text-sm font-medium transition-colors ${
+                      cta.primary
+                        ? "bg-brand-blue text-white ring-1 ring-brand-blue"
+                        : "bg-parchment ring-1 ring-black/5 hover:bg-brand-yellow/20"
+                    }`}
                   >
                     <span>{cta.label}</span>
                     <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
@@ -1226,8 +1256,22 @@ function SiteFooter() {
               fill="var(--brand-orange)"
               opacity="0.9"
             />
-            <line x1="24" y1="4" x2="24" y2="44" stroke="white" strokeWidth="1" />
-            <line x1="4" y1="24" x2="44" y2="24" stroke="white" strokeWidth="1" />
+            <line
+              x1="24"
+              y1="4"
+              x2="24"
+              y2="44"
+              stroke="white"
+              strokeWidth="1"
+            />
+            <line
+              x1="4"
+              y1="24"
+              x2="44"
+              y2="24"
+              stroke="white"
+              strokeWidth="1"
+            />
           </svg>
           <p className="mt-6 max-w-[36ch] text-center font-display text-lg italic text-ink/60">
             From a silent song, to a kite in the sky.
@@ -1270,4 +1314,3 @@ function SiteFooter() {
     </footer>
   );
 }
-
