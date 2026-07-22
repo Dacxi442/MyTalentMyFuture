@@ -1,19 +1,25 @@
 {
-  "version": 2,
-  "builds": [
+  "buildCommand": "vite build",
+  "outputDirectory": ".output/public",
+  "framework": null,
+  "rewrites": [
     {
-      "src": "dist/server/server.js",
-      "use": "@vercel/node"
+      "source": "/(.*)",
+      "destination": "/.output/server/index.mjs"
     }
   ],
-  "routes": [
+  "headers": [
     {
-      "src": "/assets/(.*)",
-      "dest": "/dist/client/assets/$1"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/dist/server/server.js"
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=()"
+        }
+      ]
     }
   ]
 }

@@ -32,7 +32,7 @@ import {
 import heroSpark from "@/assets/hero-spark.jpg";
 import journeyScene from "@/assets/journey-scene.jpg";
 import showcaseKite from "@/assets/showcase-kite.jpg";
-import daniewega from "@/assets/danielwega.jpg";
+import danielwega from "@/assets/danielwega.jpg";
 import wahuu from "@/assets/wahuu.jpeg";
 import kym from "@/assets/kym.jpg";
 
@@ -284,9 +284,9 @@ const faqs = [
   },
 ];
 
-/* Google Form links — replaced by the organiser as they finalise each form. */
+/* Google Form links — replace registerChild with the actual form URL before going live. */
 const FORM_LINKS = {
-  registerChild: "https://forms.gle/your-child-registration-form",
+  registerChild: "https://forms.gle/oUs5PPs4JaR99gdA7", // TODO: replace with the child registration form link
   mentor: "https://forms.gle/oUs5PPs4JaR99gdA7",
   partner: "https://forms.gle/oUs5PPs4JaR99gdA7",
   donate: "https://forms.gle/oUs5PPs4JaR99gdA7",
@@ -828,7 +828,7 @@ function ChapterCircle() {
     {
       name: "Daniel Wega",
       roles: ["Founder Dacxi Technologies", "Bootcamp Lead Coordinator"],
-      image: daniewega,
+      image: danielwega,
     },
     {
       name: "Ochran Ongeri",
@@ -884,10 +884,17 @@ function ChapterCircle() {
                 key={m.name}
                 className="group flex flex-col items-center gap-6 rounded-3xl border border-black/5 bg-white/70 p-8 text-center transition-all duration-300 hover:-translate-y-1 hover:border-brand-orange/40 hover:bg-white hover:shadow-lg"
               >
-                <img
-                  src={m.image}
-                  className="h-24 w-24 shrink-0 rounded-full object-cover ring-1 ring-black/5 transition-transform duration-300 group-hover:scale-105 bg-black/5"
-                />
+                {m.image ? (
+                  <img
+                    src={m.image}
+                    alt={m.name}
+                    className="h-24 w-24 shrink-0 rounded-full object-cover ring-1 ring-black/5 transition-transform duration-300 group-hover:scale-105"
+                  />
+                ) : (
+                  <div className="h-24 w-24 shrink-0 rounded-full bg-brand-blue/10 ring-1 ring-black/5 flex items-center justify-center font-display text-3xl font-medium text-brand-blue transition-transform duration-300 group-hover:scale-105">
+                    {m.name.charAt(0)}
+                  </div>
+                )}
                 <div className="flex flex-col gap-2 w-full">
                   <div className="font-display text-xl font-medium leading-tight">
                     {m.name}
@@ -1002,9 +1009,14 @@ function ChapterInvitation() {
                 <span className="font-display text-lg text-ink">
                   {t.amount}
                 </span>
-                <button className="inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium text-brand-orange ring-1 ring-brand-orange/30 hover:bg-brand-orange hover:text-white transition-colors">
+                <a
+                  href={FORM_LINKS.donate}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium text-brand-orange ring-1 ring-brand-orange/30 hover:bg-brand-orange hover:text-white transition-colors"
+                >
                   Sponsor <ArrowUpRight className="h-3.5 w-3.5" />
-                </button>
+                </a>
               </div>
             </Reveal>
           ))}
@@ -1092,7 +1104,7 @@ function ChapterInvitation() {
 }
 
 /* ------------------------------------------------------------------ */
-/*   Chapter IX — The Details (FAQ + contact)                          */
+/*   Chapter VIII — The Details (FAQ + contact)                        */
 /* ------------------------------------------------------------------ */
 
 function ChapterDetails() {
@@ -1151,14 +1163,21 @@ function ChapterDetails() {
             </div>
 
             <div className="mt-8 flex items-center gap-3">
-              {[Instagram, Facebook, Twitter, Youtube].map((I, i) => (
+              {([
+                { Icon: Instagram, href: "https://instagram.com/mytalentmyfuture", label: "Instagram" },
+                { Icon: Facebook, href: "https://facebook.com/mytalentmyfuture", label: "Facebook" },
+                { Icon: Twitter, href: "https://twitter.com/MyTalentMyFuture", label: "Twitter / X" },
+                { Icon: Youtube, href: "https://youtube.com/@mytalentmyfuture", label: "YouTube" },
+              ] as const).map(({ Icon, href, label }) => (
                 <a
-                  key={i}
-                  href="#"
-                  aria-label="Social link"
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={label}
                   className="grid h-10 w-10 place-items-center rounded-full bg-white ring-1 ring-black/5 text-ink/60 hover:bg-brand-orange hover:text-white transition-colors"
                 >
-                  <I className="h-4 w-4" />
+                  <Icon className="h-4 w-4" />
                 </a>
               ))}
             </div>
