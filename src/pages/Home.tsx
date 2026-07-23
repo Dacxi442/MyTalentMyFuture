@@ -424,22 +424,96 @@ function ChapterSpark() {
         <p className="my-6 max-w-[36ch] text-center font-display text-lg italic text-ink/60">
           A dream waiting to catch the wind.
         </p>
-        <svg
-          aria-hidden
-          width="48"
-          height="48"
-          viewBox="0 0 48 48"
-          className="animate-float-slow"
-        >
-          {/* Upright, rising kite */}
-          <polygon
-            points="24,4 40,16 24,44 8,16"
-            fill="var(--brand-orange)"
-            opacity="0.9"
-          />
-          <line x1="24" y1="4" x2="24" y2="44" stroke="white" strokeWidth="1" />
-          <line x1="8" y1="16" x2="40" y2="16" stroke="white" strokeWidth="1" />
-        </svg>
+        <div className="relative flex justify-center w-full max-w-[280px] sm:max-w-md md:max-w-xl min-h-[140px] items-center">
+          {/* Cloud 1 - Far Left (Small) */}
+          <svg
+            aria-hidden
+            width="80"
+            height="40"
+            viewBox="0 0 120 60"
+            className="absolute -left-6 sm:-left-2 md:-left-8 top-12 animate-cloud-drift opacity-90 text-white drop-shadow-sm"
+            fill="currentColor"
+          >
+            <path d="M30 45 C15 45, 10 30, 25 25 C25 10, 55 5, 65 20 C85 10, 105 25, 95 40 C110 45, 95 60, 75 55 C60 60, 45 55, 30 45 Z" />
+          </svg>
+          
+          {/* Cloud 2 - Mid Left (Medium) */}
+          <svg
+            aria-hidden
+            width="120"
+            height="60"
+            viewBox="0 0 120 60"
+            className="absolute left-2 sm:left-6 md:left-12 -top-2 animate-cloud-drift-reverse opacity-100 text-white drop-shadow-md"
+            fill="currentColor"
+          >
+            <path d="M30 45 C15 45, 10 30, 25 25 C25 10, 55 5, 65 20 C85 10, 105 25, 95 40 C110 45, 95 60, 75 55 C60 60, 45 55, 30 45 Z" />
+          </svg>
+
+          {/* Cloud 3 - Background Left (Large, faint blue) */}
+          <svg
+            aria-hidden
+            width="160"
+            height="80"
+            viewBox="0 0 120 60"
+            className="absolute -left-16 sm:-left-12 md:-left-20 top-2 animate-cloud-drift opacity-15 text-brand-blue"
+            fill="currentColor"
+          >
+             <path d="M25 35 C10 35, 5 25, 20 20 C20 10, 45 5, 55 15 C70 5, 90 20, 80 30 C95 35, 80 45, 65 42 C50 48, 35 45, 25 35 Z" />
+          </svg>
+          
+          <svg
+            aria-hidden
+            width="48"
+            height="48"
+            viewBox="0 0 48 48"
+            className="animate-float-slow relative z-10 mx-auto"
+          >
+            {/* Upright, rising kite */}
+            <polygon
+              points="24,4 40,16 24,44 8,16"
+              fill="var(--brand-orange)"
+              opacity="0.9"
+            />
+            <line x1="24" y1="4" x2="24" y2="44" stroke="white" strokeWidth="1" />
+            <line x1="8" y1="16" x2="40" y2="16" stroke="white" strokeWidth="1" />
+          </svg>
+
+          {/* Cloud 4 - Mid Right (Medium) */}
+          <svg
+            aria-hidden
+            width="100"
+            height="50"
+            viewBox="0 0 100 50"
+            className="absolute right-0 sm:right-4 md:right-16 top-6 animate-cloud-drift-reverse opacity-100 text-white drop-shadow-md"
+            fill="currentColor"
+          >
+             <path d="M25 35 C10 35, 5 25, 20 20 C20 10, 45 5, 55 15 C70 5, 90 20, 80 30 C95 35, 80 45, 65 42 C50 48, 35 45, 25 35 Z" />
+          </svg>
+
+          {/* Cloud 5 - Far Right (Small) */}
+          <svg
+            aria-hidden
+            width="70"
+            height="35"
+            viewBox="0 0 120 60"
+            className="absolute -right-6 sm:-right-4 md:-right-8 -top-4 animate-cloud-drift opacity-90 text-white drop-shadow-sm"
+            fill="currentColor"
+          >
+            <path d="M30 45 C15 45, 10 30, 25 25 C25 10, 55 5, 65 20 C85 10, 105 25, 95 40 C110 45, 95 60, 75 55 C60 60, 45 55, 30 45 Z" />
+          </svg>
+
+          {/* Cloud 6 - Background Right (Large, faint blue) */}
+          <svg
+            aria-hidden
+            width="140"
+            height="70"
+            viewBox="0 0 100 50"
+            className="absolute -right-12 sm:-right-8 md:-right-24 top-10 animate-cloud-drift-reverse opacity-15 text-brand-blue"
+            fill="currentColor"
+          >
+             <path d="M25 35 C10 35, 5 25, 20 20 C20 10, 45 5, 55 15 C70 5, 90 20, 80 30 C95 35, 80 45, 65 42 C50 48, 35 45, 25 35 Z" />
+          </svg>
+        </div>
         <div className="thread h-16 w-px opacity-70 mt-2" />
       </div>
 
