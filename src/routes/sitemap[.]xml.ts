@@ -4,7 +4,7 @@ import type {} from "@tanstack/react-start";
 /* Set VITE_SITE_URL in your Vercel environment variables to your production domain.
    Example: https://mytalentmyfuture.vercel.app or https://www.mytalentmyfuture.co.ke */
 const BASE_URL =
-  import.meta.env["VITE_SITE_URL"] ??
+  import.meta.env.VITE_SITE_URL ??
   "https://mytalentmyfuture.vercel.app";
 
 interface SitemapEntry {
