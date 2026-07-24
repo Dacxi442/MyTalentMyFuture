@@ -1,5 +1,11 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
+import { Layout } from "./components/Layout";
+import { Team } from "./components/sections/Team";
+import { Discovery } from "./components/sections/Discovery";
+import { Sponsor } from "./components/sections/Sponsor";
+import { Register } from "./components/sections/Register";
+import { Payment } from "./components/sections/Payment";
 
 function NotFound() {
   return (
@@ -29,6 +35,11 @@ export default function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
+      <Route path="/team" element={<Layout><Team /></Layout>} />
+      <Route path="/discover" element={<Layout><Discovery /></Layout>} />
+      <Route path="/sponsor" element={<Layout><Sponsor /></Layout>} />
+      <Route path="/payment" element={<Layout><Payment /></Layout>} />
+      <Route path="/register" element={<Layout><Register /></Layout>} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );
