@@ -1,5 +1,5 @@
-import { Reveal } from "../ui/Reveal";
-import { Kicker } from "../ui/Kicker";
+import { Reveal } from "../uiy/Reveal";
+import { Kicker } from "../uiy/Kicker";
 import { team, partners } from "../../lib/data";
 import { Linkedin, Twitter, Instagram, Globe } from "lucide-react";
 
@@ -61,7 +61,7 @@ export function Team() {
                     {member.bio}
                   </p>
                 )}
-                
+
                 {/* Connect Section */}
                 {member.socials && Object.keys(member.socials).length > 0 && (
                   <div className="mt-4 pt-4 border-t border-black/5">

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Plus, Minus, Phone, MessageCircle, Mail, MapPin, Instagram, Facebook, Twitter, Youtube } from "lucide-react";
-import { Reveal } from "../ui/Reveal";
-import { Kicker } from "../ui/Kicker";
+import { Reveal } from "../uiy/Reveal";
+import { Kicker } from "../uiy/Kicker";
 import { faqs } from "../../lib/data";
 
 function FaqRow({

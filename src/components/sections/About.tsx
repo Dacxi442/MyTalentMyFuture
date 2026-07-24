@@ -1,5 +1,5 @@
-import { Reveal } from "../ui/Reveal";
-import { Kicker } from "../ui/Kicker";
+import { Reveal } from "../uiy/Reveal";
+import { Kicker } from "../uiy/Kicker";
 
 export function About() {
   const stats = [
@@ -77,23 +77,20 @@ export function About() {
               {stats.map((s, i) => (
                 <div
                   key={s.label}
-                  className={`flex flex-col justify-center rounded-3xl border border-black/5 p-8 ${
-                    i === 0
+                  className={`flex flex-col justify-center rounded-3xl border border-black/5 p-8 ${i === 0
                       ? "bg-brand-blue text-white ring-1 ring-brand-blue"
                       : "bg-white/50"
-                  }`}
+                    }`}
                 >
                   <div
-                    className={`font-display text-4xl font-medium md:text-5xl ${
-                      i === 0 ? "text-white" : "text-brand-orange"
-                    }`}
+                    className={`font-display text-4xl font-medium md:text-5xl ${i === 0 ? "text-white" : "text-brand-orange"
+                      }`}
                   >
                     {s.n}
                   </div>
                   <div
-                    className={`mt-2 text-sm font-medium ${
-                      i === 0 ? "text-white/80" : "text-ink/60"
-                    }`}
+                    className={`mt-2 text-sm font-medium ${i === 0 ? "text-white/80" : "text-ink/60"
+                      }`}
                   >
                     {s.label}
                   </div>

@@ -1,6 +1,6 @@
 import { CalendarDays, Plus } from "lucide-react";
 import heroSpark from "@/assets/hero-spark.jpg";
-import { Kicker } from "../ui/Kicker";
+import { Kicker } from "../uiy/Kicker";
 import { Link } from "react-router-dom";
 
 export function Hero() {

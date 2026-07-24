@@ -1,5 +1,5 @@
-import { Reveal } from "../ui/Reveal";
-import { Kicker } from "../ui/Kicker";
+import { Reveal } from "../uiy/Reveal";
+import { Kicker } from "../uiy/Kicker";
 
 export function WhoIsThis() {
   return (

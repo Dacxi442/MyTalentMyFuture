@@ -1,6 +1,6 @@
 import { ArrowUpRight } from "lucide-react";
-import { Reveal } from "../ui/Reveal";
-import { Kicker } from "../ui/Kicker";
+import { Reveal } from "../uiy/Reveal";
+import { Kicker } from "../uiy/Kicker";
 import { FORM_LINKS } from "../../lib/data";
 
 export function Resources() {
@@ -75,16 +75,16 @@ export function Resources() {
                     >
                       <span
                         className={`shrink-0 text-sm ${i === needItems.length - 1
-                            ? "font-bold text-brand-orange"
-                            : "text-brand-orange"
+                          ? "font-bold text-brand-orange"
+                          : "text-brand-orange"
                           }`}
                       >
                         {i === needItems.length - 1 ? "→" : "◯"}
                       </span>
                       <span
                         className={`text-sm ${i === needItems.length - 1
-                            ? "font-bold text-brand-orange"
-                            : "text-ink/80"
+                          ? "font-bold text-brand-orange"
+                          : "text-ink/80"
                           }`}
                       >
                         {item}
